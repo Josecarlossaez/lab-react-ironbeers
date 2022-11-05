@@ -17,7 +17,7 @@ const getData = async()=> {
 try {
     const response = await axios.get("https://ih-beers-api2.herokuapp.com/beers")
     // 3.guardar la data
-    console.log(response.data)
+    // console.log(response.data)
     setBeerList(response.data)
     setIsFetching(false)
 } catch (error) {
