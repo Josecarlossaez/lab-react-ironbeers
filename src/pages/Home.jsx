@@ -6,8 +6,8 @@ import randomBeer from "../assets/random-beer.png"
 
 function Home() {
   return (
-    <div>
-        <div>
+    <div style={{display:"flex", flexDirection:"column",alignItems:"center"}}>
+        <div style={{width:"650px",justifycontent:"center"}}>
             <img src={beers} alt="allBeers" />
             <h3>
                 <Link to="/beers">All Beers</Link>
@@ -17,7 +17,7 @@ function Home() {
             are also reproduced in their exact original form, accompanied by English versions from 
             the 1914 translation by H. Rackham.</p>
         </div>
-        <div>
+        <div style={{width:"650px",justifycontent:"center"}}>
             <img src={randomBeer} alt="RandomBeer" />
             <h3>
                 <Link to="/aleatorio">Random Beer</Link>
@@ -30,7 +30,7 @@ function Home() {
             are also reproduced in their exact original form, accompanied by English versions from 
             the 1914 translation by H. Rackham.</p>
         </div>
-        <div>
+        <div style={{width:"650px",justifycontent:"center"}}>
             <img src={newBeer} alt="NewBeer" />
             <h3>
                 <Link to="/new-beer">New Beer</Link>
