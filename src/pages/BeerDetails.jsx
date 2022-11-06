@@ -60,7 +60,7 @@ try {
     </Link>
   </nav>
 <h4>Beer Details</h4>
-<div style={{width:"6500px"}}>
+<div style={{width:"650px"}}>
   <img src={filterDetails[0].image_url} alt="beer" width="100px" />
   <div style={{display:"flex", justifyContent:"space-between"}}>
      <div>   

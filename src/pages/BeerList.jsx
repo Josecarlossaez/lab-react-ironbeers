@@ -4,11 +4,13 @@ import {Link} from "react-router-dom"
 import {useState} from "react"
 import { useEffect } from 'react'
 import axios from 'axios'
+import NewBeer from './NewBeer'
 
 
 function BeerList() {
     const [beerList, setBeerList] = useState(null)
     const [isFetching, setIsFetching] = useState(true)
+
     // 2. llamar a la Api
     useEffect(() => {
     getData()
@@ -41,6 +43,7 @@ if(isFetching===true){
         <img src={imageHome} alt="home  " />
       </Link>
     </nav>
+   
     <h4>Beers List</h4>
 {beerList.map((eachBeer) => {
     return(

@@ -1,4 +1,5 @@
 import {Route,Routes} from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import BeerDetails from "./pages/BeerDetails";
 import BeerList from "./pages/BeerList";
@@ -7,6 +8,11 @@ import NewBeer from "./pages/NewBeer";
 import RandomBeer from "./pages/RandomBeer";
 
 function App() {
+
+
+    // vamos a añadir la cerveza al estado
+ 
+
   return (
     <div className="App">
    <Routes>
